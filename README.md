@@ -2,7 +2,9 @@
 
 A CLI tool that orchestrates a **multi-agent debate** using local LLMs via [Ollama](https://ollama.com). Multiple AI instances discuss a topic across several rounds and converge on a synthesised consensus answer.
 
-I built this for fun — I wanted to test how much AI agents can challenge each other to produce better, more refined answers. The adversarial dynamic (especially with the Skeptic agent) forces models to justify their reasoning rather than just agreeing.
+I built this for fun — I wanted to test how much AI models can challenge each other to produce better, more refined answers. The adversarial dynamic (especially with the Skeptic) forces models to justify their reasoning rather than just agreeing.
+
+> **A note on terminology:** Strictly speaking, an AI agent is *"an advanced software system capable of perceiving its environment, reasoning, making autonomous decisions, and executing actions to achieve specific goals with minimal human intervention."* By that definition, a bare Ollama model is not an agent — it's a stateless inference endpoint. Throughout this project the word **agent** is used loosely, as it has become socially accepted shorthand for "a model instance playing a role in a pipeline." We're aware of the distinction and use the term purely for convenience.
 
 > **Tip:** **Mixing different models** (e.g. `llama3.2` + `qwen2.5` + `mistral`) produces richer debates — each model has different reasoning styles, knowledge biases and blind spots, so the disagreements are more genuine and the final synthesis more robust.
 
